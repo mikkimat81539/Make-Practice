@@ -1,6 +1,11 @@
 # THIS IS A PRACTICE FILE FOR LEARNING MAKE
 
-all: hello goodbye
+greet = $(wildcard *.cpp)
+
+greet: # Defining target 
+	echo $(greet)
+
+all: $(greet)
 
 # BELOW IS MY RULE
 # Target: hello
