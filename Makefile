@@ -4,7 +4,12 @@
 # target: prerequisites
 	# receipe
 
-all: build # these are my targets
+# In my terminal I do not have to type all targets
+
+all: clean build # these are my targets
+
+clean: 
+	rm hello goodbye
 
 # BELOW IS MY RULE
 build: test1.cpp
